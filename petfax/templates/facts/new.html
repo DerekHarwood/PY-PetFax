@@ -1,0 +1,26 @@
+{% extends "index-base.html" %} {% block title %} Pets {% endblock %} {% block
+body %}
+<div class="container">
+  <h1>Submit Facts</h1>
+  <div class="callout">
+    If you have some fun animal facts you would like to share, please do so
+    below and click submit
+  </div>
+  <div class="facts-container">
+    <form method="POST">
+      <label for="submitter">
+        <h2>Submitter</h2>
+      </label>
+      <input type="text" name="submitter" />
+      <br />
+      <label for="fact">
+        <h2>Fact</h2>
+      </label>
+      <textarea name="fact"></textarea>
+      <br />
+      <input type="submit" value="Submit the Fact" />
+    </form>
+  </div>
+  <a href="/pets">&#10094; Go back! </a>
+</div>
+{% endblock %}
